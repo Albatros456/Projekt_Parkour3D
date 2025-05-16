@@ -1,0 +1,60 @@
+###############################
+# Unreal Engine - GitIgnore
+# Przesyła tylko:
+# - blueprinty z Content/ThirdPerson/Blueprints/
+# - kod z Source/
+# - plik .uproject
+###############################
+
+# --- Ignoruj wszystkie assety .uasset i .umap ---
+*.uasset
+*.umap
+
+# --- ZACHOWAJ blueprinty tylko z podanej ścieżki ---
+!Content/ThirdPerson/Blueprints/**
+!Content/ThirdPerson/Blueprints/**/*.uasset
+
+# --- Zachowaj plik projektu .uproject ---
+!*.uproject
+
+# --- Zachowaj kod źródłowy C++ ---
+!Source/**
+
+# --- Ignoruj build/cache/temp itp. ---
+/Binaries/
+/Build/
+/DerivedDataCache/
+/Intermediate/
+/Saved/
+/.vscode/
+/.idea/
+/*.sln
+*.suo
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+*.xcodeproj
+*.xcworkspace
+*.log
+*.pdb
+*.obj
+*.exe
+*.dll
+*.tmp
+*.cache
+*.db
+*.user
+*.userprefs
+
+# --- Mac/Linux ---
+.DS_Store
+*.dSYM/
+*.swp
+
+# --- (Opcjonalnie) Ignoruj duże assetowe foldery ---
+Content/StarterContent/
+Content/MegaScans/
+Content/Textures/
+Content/Models/
+Content/Audio/
